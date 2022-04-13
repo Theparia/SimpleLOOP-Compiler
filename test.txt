@@ -1,0 +1,30 @@
+int x,y, z
+bool bb;
+Book b
+set <int> ssett;
+fptr <int, bool -> void> fffptr1, fffptr12;
+
+
+
+
+class Paria {
+
+    #first comment
+    public int x, y, z;
+    private Book b
+
+    =begin second comment =end
+
+    private int foo(bool x, int y = 0, int p = 123, bool bbb=true)
+
+    private fptr <int, bool -> void> fptrInParia
+
+    =begin
+    third comment
+    =end
+
+
+}
+
+
+
