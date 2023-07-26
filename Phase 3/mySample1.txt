@@ -1,0 +1,11 @@
+Line 21: Calling a non-callable
+Line 22: Each cannot iterate over a non-array
+Line 28: Each variable id is not same type as range input
+Line 29: Return value does not match with method return type
+Line 30: Statements are unreachable
+Line 34: Constructor args do not match with definition of class Course
+Line 38: Classes cannot extend from Main class
+Line 41: Redefinition of method initialize
+Line 51: Cannot have empty array
+Line 55: Unsupported operand type for operator add
+Line 56: New on non-Set

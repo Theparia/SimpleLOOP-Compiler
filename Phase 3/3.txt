@@ -1,0 +1,24 @@
+Line 2: Class Person is in an inheritance cycle
+Line 5: Redefinition of field age
+Line 6: Redefinition of method initialize
+Line 7: Name of local variable x conflicts with a global variable’s name
+Line 10: Args in method call do not match with definition
+Line 14: Class F is not declared
+Line 17: Redefinition of method showName
+Line 23: Redefinition of class Person
+Line 31: Class Student is in an inheritance cycle
+Line 32: Redefinition of field age
+Line 35: Redefinition of method initialize
+Line 43: Method getTotalCredits needs return statement
+Line 53: Redefinition of method showName
+Line 53: Method showName needs return statement
+Line 54: Name of local variable x conflicts with a global variable’s name
+Line 56: Name of local variable x conflicts with a global variable’s name
+Line 58: Redefinition of method updateSid
+Line 68: Redefinition of local variable cid
+Line 72: Name of method credits conflicts with a field’s name
+Line 78: Redefinition of field name
+Line 79: Redefinition of method initialize
+Line 85: Redefinition of method showName
+Line 97: Constructor args do not match with definition of class Student
+Line 99: Constructor args do not match with definition of class Course

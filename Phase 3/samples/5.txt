@@ -1,0 +1,5 @@
+Line 4: Variable set is not declared
+Line 5: Variable set is not declared
+Line 6: Variable set is not declared
+Line 6: Variable f is not declared
+Line 7: Variable set is not declared
