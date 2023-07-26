@@ -1,0 +1,56 @@
+ClassDec : T
+MethodDec : f1
+ArgumentDec : a1
+ArgumentDec : a2
+ArgumentDec : a3
+ArgumentDec : a4
+ArgumentDec : a5
+MethodCall
+Operator : =
+Operator : =
+Built-in : print
+Operator : -
+Operator : +
+Operator : *
+Operator : +
+Operator : &&
+Built-in : print
+Return
+Operator : +
+MethodCall
+Built-in : print
+Return
+MethodDec : f2
+ArgumentDec : a6
+ArgumentDec : a7
+Conditional : if
+Operator : -
+Operator : >
+Return
+Built-in : print
+MethodCall
+Operator : +
+Return
+MethodDec : f3
+ArgumentDec : a9
+Conditional : if
+Operator : ==
+Return
+Conditional : else
+Return
+MethodDec : f4
+Return
+Operator : =
+MethodDec : f5
+MethodCall
+ClassDec : Main
+MethodDec : pr
+Conditional : if
+Operator : ==
+Built-in : print
+Conditional : elsif
+Operator : ==
+Conditional : if
+Operator : ==
+Built-in : print
+line 41:0 mismatched input '<EOF>' expecting {NewLine, ';'}
