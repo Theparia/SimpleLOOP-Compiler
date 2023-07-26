@@ -10,22 +10,13 @@ globalSection
     ;
 
 
-//simpleLOOP
-//    : NewLine* globalSection NewLine+ classSection NewLine*
-//    ;
-//
-//globalSection
-//    : (variableDeclaration NewLine+)* variableDeclaration?
-//    ;
-
 classSection
-    : (classDeclaration)*
+    : (classDeclaration NewLine*)*
     ;
 
-
 classDeclaration
-    : Class className = ClassIndentifier {System.out.println("ClassDec : " + $className.text);} (Less parent = ClassIndentifier {System.out.println("Inheritance : " + $className.text + " < " + $parent.text);})? NewLine* LeftCurlyBracket NewLine+ classBody RightCurlyBracket NewLine+
-    | Class className = ClassIndentifier {System.out.println("ClassDec : " + $className.text);} (Less parent = ClassIndentifier {System.out.println("Inheritance : " + $className.text + " < " + $parent.text);})? NewLine+ (classVariable NewLine+ | classMethod NewLine+ | )
+    : Class className = ClassIndentifier {System.out.println("ClassDec : " + $className.text);} (Less parent = ClassIndentifier {System.out.println("Inheritance : " + $className.text + " < " + $parent.text);})? NewLine* LeftCurlyBracket NewLine+ classBody RightCurlyBracket NewLine
+    | Class className = ClassIndentifier {System.out.println("ClassDec : " + $className.text);} (Less parent = ClassIndentifier {System.out.println("Inheritance : " + $className.text + " < " + $parent.text);})? NewLine+ (classVariable NewLine | classMethod NewLine | )
     ;
 
 classBody
@@ -47,11 +38,11 @@ scope
     ;
 
 multiStatements
-    : NewLine* LeftCurlyBracket NewLine+ (statement)* RightCurlyBracket NewLine+
+    : NewLine* LeftCurlyBracket NewLine+ (statement NewLine*)* RightCurlyBracket NewLine+
     ;
 
 singleStatement
-    : NewLine+ statement
+    : NewLine+ statement NewLine*
     ;
 
 ifStatement
@@ -68,17 +59,17 @@ iterativeStatement
 
 
 statement
-    : variableDeclaration NewLine+
-    | ifStatement Semicolon? NewLine+
-    | iterativeStatement Semicolon? NewLine+
-    | returnStatement Semicolon? NewLine+
-    | printStatement Semicolon? NewLine+
-    | methodCallStatement Semicolon? NewLine+
-    | assignStatement Semicolon? NewLine+
-    | mergeStatement Semicolon? NewLine+
-    | addStatement Semicolon? NewLine+
-    | deleteStatement Semicolon? NewLine+
-    | unaryExpression Semicolon? NewLine+
+    : variableDeclaration
+    | ifStatement Semicolon?
+    | iterativeStatement Semicolon?
+    | returnStatement Semicolon?
+    | printStatement Semicolon?
+    | methodCallStatement Semicolon?
+    | assignStatement Semicolon?
+    | mergeStatement Semicolon?
+    | addStatement Semicolon?
+    | deleteStatement Semicolon?
+    | unaryExpression Semicolon?
     ;
 
 methodArguments
@@ -195,7 +186,7 @@ unaryExpression
     ;
 
 accessExpression
-    : values ((LeftParenthesis methodArguments RightParenthesis) | (defaultExpressions) | (Dot (Initialize | Identifier)) | (LeftBracket expression RightBracket))*
+    : values (LeftParenthesis methodArguments RightParenthesis | defaultExpressions | Dot (Initialize | Identifier) | LeftBracket expression RightBracket)*
     ;
 
 
