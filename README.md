@@ -5,8 +5,8 @@ The language `SimpleLOOP` is an **object-oriented language** and has some featur
 * Grammar specification
 
 ## Phase 2 (Name Analysis)
-* Abstract Syntax Tree (AST)
-* Errors:
+* **Abstract Syntax Tree (AST)**
+* **Errors**
   * Redefinition of class \<ClassName>
   * Redefinition of local variable \<VariableName>
   * Redefinition of field \<FieldName>
@@ -17,7 +17,7 @@ The language `SimpleLOOP` is an **object-oriented language** and has some featur
   * Class \<ClassName> is in an inheritance cycle
 
 ## Phase 3 (Type-Checking)
-* Errors:
+* **Errors**
   * Variable \<VariableName> is not declared
   * Class \<ClassName> is not declared
   * There is no member named \<VariableName> in class \<ClassName>
