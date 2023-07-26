@@ -189,7 +189,7 @@ public class CodeGenerator extends Visitor<String> {
             addCommand("aload 0");
         if(fieldType instanceof IntType){
             if(defaultValue == null)
-                addCommand("ldc 0");
+                addCommand(this.visit(new IntValue(0)));
             else
                 addCommand(this.visit((IntValue) defaultValue));
             addCommand("invokestatic java/lang/Integer/valueOf(I)Ljava/lang/Integer;");
@@ -276,7 +276,7 @@ public class CodeGenerator extends Visitor<String> {
     public String visit(Program program) {
         if(program.getGlobalVariables().size() > 0) {
             createFile("Global");
-            addCommand(".class public static " + "Global");
+            addCommand(".class public " + "Global");
             addCommand(".super java/lang/Object");
             ClassDeclaration globalClassDeclaration = new ClassDeclaration(new Identifier("Global"));
             this.globalVariables.addAll(program.getGlobalVariables());
@@ -293,7 +293,6 @@ public class CodeGenerator extends Visitor<String> {
             addCommand(".limit stack 128");
             addCommand(".limit locals 128");
             addCommand("aload 0");
-//            addCommand("invokespecial Global/<init>()V");
             addCommand("invokespecial java/lang/Object/<init>()V");
             for(VariableDeclaration globalVariableDeclaration : program.getGlobalVariables()){
                 this.initializeField(globalVariableDeclaration, true, null);
@@ -954,7 +953,7 @@ public class CodeGenerator extends Visitor<String> {
     @Override
     public String visit(SelfClass selfClass) {
         String commands = "";
-        commands += "aload 0\n";
+        commands += "aload_0\n";
         return commands;
     }
 
