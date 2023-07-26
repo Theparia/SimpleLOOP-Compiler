@@ -1,0 +1,12 @@
+--------------------------Compiling--------------------------
+Compilation Successful
+
+-------------------Generating Class Files-------------------
+Generated: Array.class
+Generated: Coordinate.class
+Generated: Fptr.class
+Generated: Main.class
+Generated: Point.class
+
+---------------------------Output---------------------------
+1
