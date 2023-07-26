@@ -11,7 +11,7 @@ class Person {
         self.age = age
     }
     public void showId()
-       print(self.id)
+    print(self.id)
 }
 class Employee < Person {
     private int salary
@@ -21,13 +21,22 @@ class Employee < Person {
         self.age = age
         self.privileged = privileged
         self.salary = salary
-   }
-   public void showSalary() {
-       if ! self.privileged
-           print(self.salary)
-       else
-           print(0)
-   }
+    }
+    public void showSalary() {
+        if !self.privileged
+        print(self.salary)
+        else
+            print(0)
+    }
+}
+
+class Main {
+    public initialize() {
+        Employee e
+        e = Employee.new(10, 37, false, 300000)
+        e.showSalary()
+        e.showId()
+    }
 }
 ```
 ## Phase 1 (Lexer)
