@@ -61,7 +61,7 @@ class Main {
   * There is no member named \<VariableName> in class \<ClassName>
   * Condition must be bool
   * Left side of the assignment must be a valid lvalue
-  * Lvalue is required as the operand of <OperatorName>
+  * Lvalue is required as the operand of \<OperatorName>
   * Calling a non-callable
   * Unsupported type for print
   * ...
