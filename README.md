@@ -2,7 +2,7 @@
 
 The language `SimpleLOOP` is an **object-oriented language** and has some features of object-oriented language such as **inheritance**. In this language, there is a `Main` class in which an `initialize` method is implemented. The programs written in this language execute the commands inside this method when they are executed.
 ## Phase 1 (Lexer)
-* Grammar specification
+* **Grammar** specification
 
 ## Phase 2 (Name Analysis)
 * **Abstract Syntax Tree (AST)**
@@ -26,28 +26,9 @@ The language `SimpleLOOP` is an **object-oriented language** and has some featur
   * Lvalue is required as the operand of <OperatorName>
   * Calling a non-callable
   * Unsupported type for print
-  * Cannot have empty array
-  * Cannot use return value of a method having void return type
-  * Return value does not match with method return type
-  * Args in method call do not match with definition
-  * Constructor args do not match with definition of class \<ClassName>
-  * Each cannot iterate over a non-array
-  * Each range expression is not an integer
-  * Each variable \<VarName> is not same type as range input
-  * Access on a non-class
-  * Access by index on a non-array
-  * Array index is not an integer
-  *  Merge on non-Set
-  *  New on non-Set
-  *  Set add method input is not an integer
-  *  Set include method input is not an integer
-  *  Main class not found
-  *  Main class cannot inherit any class
-  *  Classes cannot extend from Main class
-  *  No constructor found for Main class
-  *  Main constructor cannot have arguments
-  *  Method \<MethodName> needs return statement
-  *  Method \<MethodName> should not have a return statement
-  *  Statements are unreachable
+  * ...
 
 ## Phase 4 (Code Generation)
+* Program translation to **bytecode**
+* Generate .class files using [jasmin](https://jasmin.sourceforge.net/) assembler
+
