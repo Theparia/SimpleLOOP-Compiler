@@ -72,7 +72,7 @@ class Main {
 
 <br>
 
-### Contributors:
+### Contributors
 * [Paria Khoshtab](https://github.com/Theparia/)
 * [Parnian Fazel](https://github.com/parnianf/)
 
