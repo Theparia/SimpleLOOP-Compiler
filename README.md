@@ -70,3 +70,8 @@ class Main {
 * Program translation to **bytecode**
 * Generate .class files using [jasmin](https://jasmin.sourceforge.net/) assembler
 
+## Contributors
+* [Paria Khoshtab](https://github.com/Theparia/)
+* [Parnian Fazel](https://github.com/parnianf/)
+
+
